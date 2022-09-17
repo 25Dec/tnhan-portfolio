@@ -1,6 +1,6 @@
 nav {
 	position: fixed;
-	bottom: 1.5rem;
+	bottom: 1rem;
 	left: 50%;
 	transform: translateX(-50%);
 
@@ -16,7 +16,7 @@ nav {
 
 	z-index: 99;
 	transition: var(--transition);
-	overflow: hidden;
+	backdrop-filter: blur(15px);
 }
 nav a {
 	font-size: 1.25rem;
@@ -26,13 +26,15 @@ nav a {
 	border-radius: 50%;
 	color: var(--color-text);
 	transition: var(--transition);
+
+	background: transparent;
 }
 nav a:hover {
-	background: rgba(85, 85, 85, 0.3);
+	background: rgba(85, 85, 85, 0.4);
 }
 nav a.active {
-	background: var(--color-pink);
-	color: #121212;
+	background: rgba(12, 12, 12, 0.3);
+	color: #f2f2f2;
 }
 /* Mobile */
 @media only screen and (max-width: 739px) {
