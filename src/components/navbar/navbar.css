@@ -1,0 +1,46 @@
+nav {
+	position: fixed;
+	bottom: 1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+
+	width: max-content;
+	height: 4.5rem;
+	padding: 1rem 2rem;
+	gap: 5rem;
+
+	display: flex;
+	justify-content: space-evenly;
+	background: rgba(85, 85, 85, 0.4);
+	border-radius: 3rem;
+
+	z-index: 99;
+	transition: var(--transition);
+	overflow: hidden;
+}
+nav a {
+	font-size: 1.25rem;
+	padding: 0.6rem;
+	line-height: 1rem;
+
+	border-radius: 50%;
+	color: var(--color-text);
+	transition: var(--transition);
+}
+nav a:hover {
+	background: rgba(85, 85, 85, 0.3);
+}
+nav a.active {
+	background: var(--color-pink);
+	color: #121212;
+}
+/* Mobile */
+@media only screen and (max-width: 739px) {
+	nav {
+		width: 100%;
+		bottom: 0;
+		border-radius: 0;
+
+		gap: 2rem;
+	}
+}

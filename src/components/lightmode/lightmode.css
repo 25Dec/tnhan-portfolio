@@ -1,0 +1,22 @@
+.light-mode {
+	--color-bg: #f2f2f2;
+	--color-text: #121212;
+}
+.lightmode-btn {
+	text-align: center;
+	width: 2.5rem;
+	height: 2.5rem;
+
+	padding: 0.35rem;
+	border-radius: 50%;
+	font-size: 1.5rem;
+
+	position: fixed;
+	top: 0.75rem;
+	right: 0.75rem;
+
+	transition: var(--transition);
+}
+.lightmode-btn:hover {
+	background: rgba(85, 85, 85, 0.3);
+}
