@@ -18,6 +18,9 @@
 
 	--transition: 0.5s linear;
 }
+::-webkit-scrollbar {
+	display: none;
+}
 html {
 	scroll-behavior: smooth;
 }
@@ -34,6 +37,32 @@ body {
 section {
 	height: 100vh;
 	margin-top: 5rem;
+}
+img {
+	width: 100%;
+	object-fit: cover;
+}
+.btn {
+	width: max-content;
+	padding: 1rem 2rem;
+	margin-right: 1rem;
+
+	background: transparent;
+	cursor: pointer;
+	transition: var(--transition);
+
+	color: pink;
+	border: 1px solid pink;
+	border-radius: 0.75rem;
+}
+.btn:hover {
+	color: #121212;
+	background-color: #f2f2f2;
+	border-color: transparent;
+}
+.btn-primary {
+	background: pink;
+	color: #121212;
 }
 /* Tablet */
 @media only screen and (max-width: 1023px) and (min-width: 740px) {

@@ -5,13 +5,13 @@ nav {
 	transform: translateX(-50%);
 
 	width: max-content;
-	height: 4.5rem;
+	height: 4.25rem;
 	padding: 1rem 2rem;
 	gap: 5rem;
 
 	display: flex;
 	justify-content: space-evenly;
-	background: rgba(85, 85, 85, 0.4);
+	background: rgba(85, 85, 85, 0.5);
 	border-radius: 3rem;
 
 	z-index: 99;
@@ -20,21 +20,21 @@ nav {
 }
 nav a {
 	font-size: 1.25rem;
-	padding: 0.6rem;
-	line-height: 1rem;
+	padding: 0.5rem;
+	line-height: 0rem;
 
 	border-radius: 50%;
-	color: var(--color-text);
+	color: rgba(255, 255, 255, 0.5);
 	transition: var(--transition);
 
 	background: transparent;
 }
 nav a:hover {
-	background: rgba(85, 85, 85, 0.4);
+	background: rgba(85, 85, 85, 0.5);
 }
 nav a.active {
-	background: rgba(12, 12, 12, 0.3);
-	color: #f2f2f2;
+	background: rgba(85, 85, 85, 0.5);
+	color: rgba(255, 255, 255);
 }
 /* Mobile */
 @media only screen and (max-width: 739px) {
