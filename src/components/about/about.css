@@ -1,16 +1,22 @@
-.about-container {
+#about h2 {
+	text-align: center;
+	color: pink;
+	font-size: 3rem;
+}
+#about > p {
+	text-align: center;
+	margin-bottom: 1rem;
+	font-size: 1.1rem;
+}
+.about__container {
 	display: grid;
 	grid-template-columns: 1fr;
 }
-.about-container h2,
-.about-container > p {
+.about__container > p {
 	text-align: center;
 	margin-bottom: 1rem;
 }
-.about-container h2 {
-	color: pink;
-}
-.about-container > p {
+.about__container > p {
 	font-size: 1.1rem;
 }
 /* Details */
@@ -40,32 +46,37 @@
 	left: 0;
 
 	transform-style: preserve-3d;
-	transform: perspective(500px) rotateY(0deg);
-	transition: var(--transition);
+	transition: 1s;
 
 	backface-visibility: hidden;
+	border-radius: 50%;
 }
 .about-details-image .front {
 	background: linear-gradient(45deg, var(--color-pink), transparent);
 }
 .about-details-image:hover .front {
-	transform: perspective(500px) rotateY(180deg);
+	transform: rotateY(180deg);
 }
 .about-details-image .back {
 	background: linear-gradient(45deg, transparent, var(--color-pink));
-	transform: perspective(500px) rotateY(180deg);
+	transform: rotateY(180deg);
 }
 .about-details-image:hover .back {
-	transform: perspective(500px) rotateY(360deg);
+	transform: rotateY(360deg);
 }
 .about-details-content {
-	text-align: justify;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 	margin: 0 auto;
 }
 .about-details-content p {
 	font-size: 1.1rem;
+	text-align: justify;
+}
+.about-details-content a {
+	text-decoration: none;
+	margin-top: 2rem;
 }
 /* Skills */
 .about-skills {
@@ -81,6 +92,7 @@
 }
 .about-skills h2 {
 	color: pink;
+	font-size: 3rem;
 }
 .about-skills > p {
 	font-size: 1.1rem;
@@ -97,7 +109,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 0 1.5rem 2rem;
+	margin: 0 1.5rem 2.5rem;
 }
 .about-skills article img {
 	transition: var(--transition);
@@ -122,12 +134,18 @@
 }
 /* Mobile */
 @media only screen and (max-width: 739px) {
+	#about h2 {
+		font-size: 2.5rem;
+	}
 	.about-details {
 		grid-template-columns: 1fr;
 	}
 	.about-details-image {
 		width: 15rem;
 		height: 15rem;
+	}
+	.about-details-content {
+		align-items: center;
 	}
 	.about-details-content p {
 		margin-top: 2rem;

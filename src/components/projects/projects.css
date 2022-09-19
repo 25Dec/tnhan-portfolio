@@ -1,0 +1,11 @@
+#projects h2 {
+	text-align: center;
+	color: pink;
+	font-size: 3rem;
+	margin-bottom: 2.5rem;
+}
+.projects__container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 6rem;
+}

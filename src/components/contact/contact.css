@@ -1,0 +1,101 @@
+#contact h2 {
+	text-align: center;
+	color: pink;
+	font-size: 3rem;
+}
+#contact p {
+	text-align: center;
+	margin-bottom: 1rem;
+	font-size: 1.1rem;
+}
+.container.contact__container {
+	width: 58%;
+	margin-top: 2.5rem;
+	display: grid;
+	grid-template-columns: 30% 58%;
+	gap: 14%;
+}
+.contact__options {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+.contact__option {
+	background: rgba(85, 85, 85, 0.4);
+	padding: 1.5rem;
+	border-radius: 1.2rem;
+
+	text-align: center;
+	border: 1px solid transparent;
+	transition: var(--transition);
+}
+.contact__option a {
+	text-decoration: none;
+	color: var(--color-pink);
+	margin-top: 0.7rem;
+	font-size: 0.8rem;
+}
+.contact__option:hover {
+	background: transparent;
+	border-color: rgba(85, 85, 85, 0.4);
+}
+.contact__option-icon,
+.contact__option-icon-sent {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+.contact__option.sent {
+	width: 16.5rem;
+	height: 10rem;
+	text-align: center;
+	margin: 10.5rem auto;
+}
+.contact__option-icon-sent {
+	margin: 1rem 0;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+input,
+textarea {
+	width: 100%;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+
+	background: transparent;
+	resize: none;
+	border: 2px solid rgba(85, 85, 85, 0.4);
+
+	color: var(--color-text);
+}
+/* Tablet */
+@media only screen and (max-width: 1023px) and (min-width: 740px) {
+	.container.contact__container {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		padding-bottom: 6rem;
+		width: var(--container-width-md);
+	}
+	.contact__option.sent {
+		width: 100%;
+		margin: 0;
+	}
+}
+/* Mobile */
+@media only screen and (max-width: 739px) {
+	.container.contact__container {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+		width: var(--container-width-sm);
+		padding-bottom: 5rem;
+	}
+	form {
+		align-items: center;
+	}
+	.contact__option.sent {
+		width: 100%;
+		margin: 0;
+	}
+}

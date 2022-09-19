@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Avatar2 from "../../assets/img/Avatar2.png";
 import Avatar3 from "../../assets/img/Avatar3.png";
 import "./about.css";
@@ -30,6 +31,12 @@ const AboutDetails = () => {
 					My future direction is to become a Fullstack developer financially free and expand my relationship. Besides
 					coding, I also like listening to music and reading books.
 				</p>
+				<Link
+					to="/contact"
+					className="btn btn-primary"
+				>
+					Let's Talk
+				</Link>
 			</div>
 		</div>
 	);

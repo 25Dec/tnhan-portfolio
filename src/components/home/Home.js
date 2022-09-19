@@ -7,14 +7,13 @@ import "./home.css";
 const Home = () => {
 	return (
 		<section id="home">
-			<div className="container home__container">
-				<h5>Hello I'm </h5>
-				<h2>Thien Nhan</h2>
-				<h5>Front-end Developer</h5>
+			<h5>Hello I'm </h5>
+			<h2>Thien Nhan</h2>
+			<h5>Front-end Developer</h5>
 
+			<div className="container home__container">
 				<HomeBtns />
 				<HomeSocials />
-
 				<div className="home__image">
 					<img
 						src={Avatar1}
