@@ -1,33 +1,47 @@
 import React from "react";
-import ProjectDemoBtns from "./ProjectDemoBtns";
-import ME from "../../assets/img/Avatar1.jpg";
+import SingleProject from "./SingleProject";
+import ME from "../../assets/img/pj1.png";
 import "./projects.css";
 
 const Projects = () => {
-	const project = {
-		livedemo: "https://github.com/25Dec",
-		github: "https://github.com/25Dec",
-	};
+	const projects = [
+		{
+			id: 1,
+			image: ME,
+			title: "TNhan's Portfolio",
+			description: "A website that includes information about myself and the projects that I have worked on.",
+			teamSize: 1,
+			role: "Frontend Developer",
+			technologies: "React",
+			features: "Light-Dark mode, Responsive",
+			livedemo: "",
+			github: "https://github.com/25Dec",
+		},
+		{
+			id: 2,
+			image: ME,
+			title: "TNhan's Portfolio",
+			description: "A website that includes information about myself and the projects that I have worked on.",
+			teamSize: 1,
+			role: "Frontend Developer",
+			technologies: "React",
+			features: "Light-Dark mode, Responsive",
+			livedemo: "https://github.com/25Dec",
+			github: "https://github.com/25Dec",
+		},
+	];
 	return (
 		<section id="projects">
 			<h2>My Projects</h2>
 			<div className="container projects__container">
-				<div className="project">
-					<div className="project__image">
-						<img
-							src={ME}
-							alt=""
+				{projects.map((project) => {
+					return (
+						<SingleProject
+							key={project.id}
+							project={project}
 						/>
-						<h3>Title</h3>
-					</div>
-					<div className="project__details">
-						<p>Type of Project</p>
-						<p>- Team size: 1</p>
-						<p>- Technologies:</p>
-						<p>- Features: </p>
-						<ProjectDemoBtns project={project} />
-					</div>
-				</div>
+					);
+				})}
 			</div>
 		</section>
 	);
