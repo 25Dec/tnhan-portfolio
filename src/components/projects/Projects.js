@@ -17,18 +17,6 @@ const Projects = () => {
 			livedemo: "",
 			github: "https://github.com/25Dec",
 		},
-		{
-			id: 2,
-			image: ME,
-			title: "TNhan's Portfolio",
-			description: "A website that includes information about myself and the projects that I have worked on.",
-			teamSize: 1,
-			role: "Frontend Developer",
-			technologies: "React",
-			features: "Light-Dark mode, Responsive",
-			livedemo: "https://github.com/25Dec",
-			github: "https://github.com/25Dec",
-		},
 	];
 	return (
 		<section id="projects">
