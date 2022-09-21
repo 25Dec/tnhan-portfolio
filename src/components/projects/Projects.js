@@ -15,7 +15,7 @@ const Projects = () => {
 			technologies: "React",
 			features: "Light-Dark mode, Responsive",
 			livedemo: "",
-			github: "https://github.com/25Dec",
+			github: "https://github.com/25Dec/portfolio-using-react.git",
 		},
 	];
 	return (
