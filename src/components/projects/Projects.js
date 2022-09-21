@@ -14,8 +14,8 @@ const Projects = () => {
 			role: "Frontend Developer",
 			technologies: "React",
 			features: "Light-Dark mode, Responsive",
-			livedemo: "https://portfolio-using-react-two.vercel.app/",
-			github: "https://github.com/25Dec/portfolio-using-react.git",
+			livedemo: "https://tnhan-portfolio.vercel.app/",
+			github: "https://github.com/25Dec/tnhan-portfolio.git",
 		},
 	];
 	return (
