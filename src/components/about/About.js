@@ -6,7 +6,7 @@ import "./about.css";
 const About = () => {
 	return (
 		<section id="about">
-			<h2>About Tris</h2>
+			<h2>About Me</h2>
 			<p>An overview of myself</p>
 			<div className="container about__container">
 				<AboutDetails />
