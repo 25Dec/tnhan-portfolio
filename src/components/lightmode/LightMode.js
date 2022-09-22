@@ -5,6 +5,7 @@ import "./lightmode.css";
 
 const Darkmode = () => {
 	const [isLightMode, setIsLightMode] = useState(false);
+
 	const toggleLightMode = () => {
 		setIsLightMode(!isLightMode);
 		let body = document.querySelector("body");
