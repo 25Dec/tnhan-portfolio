@@ -5,6 +5,7 @@ import JS from "../../assets/img/javascript.svg";
 import ReactJS from "../../assets/img/react.svg";
 import Vue from "../../assets/img/vue.svg";
 import SASS from "../../assets/img/sass.svg";
+import NodeJS from "../../assets/img/nodejs.svg";
 import "./about.css";
 
 const AboutSkills = () => {
@@ -12,9 +13,10 @@ const AboutSkills = () => {
 		{ id: 1, img: HTML, name: "HTML" },
 		{ id: 2, img: CSS, name: "CSS" },
 		{ id: 3, img: JS, name: "JS" },
-		{ id: 4, img: ReactJS, name: "ReactJS" },
-		{ id: 5, img: Vue, name: "Vue" },
-		{ id: 6, img: SASS, name: "SASS" },
+		{ id: 4, img: SASS, name: "SASS" },
+		{ id: 5, img: ReactJS, name: "ReactJS" },
+		{ id: 6, img: Vue, name: "Vue" },
+		{ id: 7, img: NodeJS, name: "NodeJS" },
 	];
 
 	return (
